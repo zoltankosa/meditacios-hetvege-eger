@@ -1,7 +1,7 @@
-import { API_URL } from './config.js?v=202610031009';
-import { PROGRAM } from './program.js?v=202610031009';
-import { createStore } from './store.js?v=202610031009';
-import { $, dayLabel, getLang, h, initShell, outbox, t } from './ui.js?v=202610031009';
+import { API_URL } from './config.js?v=202610031011';
+import { PROGRAM } from './program.js?v=202610031011';
+import { createStore } from './store.js?v=202610031011';
+import { $, dayLabel, getLang, h, initShell, outbox, t } from './ui.js?v=202610031011';
 
 function mount() {
   const col = getLang() === 'hu' ? 1 : 2;
