@@ -1,7 +1,7 @@
 export const STRINGS = {
   hu: {
     htmlLang: 'hu',
-    title: 'Meditációs Hétvége Eger Október 9-11',
+    title: 'Meditációs Hétvége Eger',
     place: 'Eger, Grónay Sándor utca 8.',
     directions: 'Útvonal Google Térképen',
     dates: '2026. október 9-11.',
@@ -76,7 +76,7 @@ export const STRINGS = {
   },
   en: {
     htmlLang: 'en',
-    title: 'Meditációs Hétvége Eger Október 9-11',
+    title: 'Meditációs Hétvége Eger',
     place: 'Eger, Grónay Sándor utca 8.',
     directions: 'Directions in Google Maps',
     dates: '9-11 October 2026',

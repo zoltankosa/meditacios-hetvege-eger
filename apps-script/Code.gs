@@ -1,5 +1,5 @@
 /**
- * Meditációs Hétvége Eger Október 9-11: shared registration backend.
+ * Meditációs Hétvége Eger: shared registration backend.
  * Paste into Extensions > Apps Script of the Google Sheet, then Deploy > New deployment > Web app
  * (Execute as: Me, Who has access: Anyone). After changes: Manage deployments > Edit > New version.
  */
