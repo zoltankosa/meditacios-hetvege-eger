@@ -1,6 +1,7 @@
-# 8. Karmapa Eger
+# Meditációs Hétvége Eger
 
-Mobile-first registration for the 8. Karmapa weekend, 25-27 September 2026. Separate pages:
+Mobile-first registration for the Meditációs Hétvége weekend, 9-11 October 2026 (originally built
+for the 8. Karmapa weekend, 25-27 September 2026). Separate pages:
 
 - **`/` Jelentkezés / Register** (the link to share): name, diet, and a switch for each meal and night. No email. After saving, people see a summary and can edit or cancel from the same phone.
 - **`resztvevok.html` Résztvevők / Attendees:** the number of attendees and a plain list of names. No prices, no filters. People get an edit link only next to entries made on their own phone; organisers fix anything else in the Google Sheet.
@@ -19,7 +20,7 @@ GitHub Pages only serves static files, so the registrations live in a Google She
 
 ### Connecting the Google Sheet (one time, about 5 minutes)
 
-1. Create a new Google Sheet, for example "8. Karmapa Eger jelentkezések".
+1. Create a new Google Sheet, for example "Meditációs Hétvége Eger jelentkezések".
 2. In the sheet: **Extensions → Apps Script**. Delete the sample code, paste the whole of `apps-script/Code.gs`, and save.
 3. **Deploy → New deployment**. Click the gear icon, choose **Web app**.
    - Execute as: **Me**
