@@ -1,7 +1,7 @@
-import { API_URL } from './config.js?v=202610031011';
-import { PROGRAM } from './program.js?v=202610031011';
-import { createStore } from './store.js?v=202610031011';
-import { $, dayLabel, getLang, h, initShell, outbox, t } from './ui.js?v=202610031011';
+import { API_URL } from './config.js?v=202610031119';
+import { PROGRAM } from './program.js?v=202610031119';
+import { createStore } from './store.js?v=202610031119';
+import { $, dayLabel, getLang, h, initShell, outbox, t } from './ui.js?v=202610031119';
 
 function mount() {
   const col = getLang() === 'hu' ? 1 : 2;
@@ -15,7 +15,8 @@ function mount() {
           h('h2', { class: 'prog-day' }, dayLabel(day.day), h('span', { class: 'muted', text: t('dayDates')[day.day] })),
           h('ol', { class: 'timeline' },
             day.items.map((row) =>
-              h('li', {}, h('span', { class: 'time num', text: row[0] }), h('span', { text: row[col] }))))))));
+              h('li', {}, h('span', { class: 'time num', text: row[0] }), h('span', { text: row[col] })))))),
+      h('p', { class: 'lead', text: t('programNote') })));
 }
 
 initShell('program', mount, null);

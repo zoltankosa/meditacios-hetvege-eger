@@ -4,11 +4,12 @@ export const ITEMS = [
   { id: 'fri_dinner', day: 'fri', kind: 'dinner', price: 1800, food: true },
   { id: 'fri_room', day: 'fri', kind: 'room', price: 2000, food: false },
   { id: 'sat_breakfast', day: 'sat', kind: 'breakfast', price: 1000, food: true },
-  { id: 'sat_lunch', day: 'sat', kind: 'lunch', price: 1800, food: true },
+  { id: 'sat_lunch', day: 'sat', kind: 'lunch', price: 2000, food: true },
   { id: 'sat_dinner', day: 'sat', kind: 'dinner', price: 1800, food: true },
   { id: 'sat_room', day: 'sat', kind: 'room', price: 2000, food: false },
+  { id: 'sat_teaching', day: 'sat', kind: 'teaching', price: 2000, food: false },
   { id: 'sun_breakfast', day: 'sun', kind: 'breakfast', price: 1000, food: true },
-  { id: 'sun_lunch', day: 'sun', kind: 'lunch', price: 1800, food: true },
+  { id: 'sun_lunch', day: 'sun', kind: 'lunch', price: 2000, food: true },
 ];
 
 const collator = new Intl.Collator('hu', { sensitivity: 'base' });

@@ -85,7 +85,7 @@ test('create, list, edit, delete', () => {
   assert.equal(p.meals.sat_room, true);
   assert.equal(p.meals.sun_lunch, false);
   assert.equal(sheet.rows[0][0], 'ID');
-  assert.equal(sheet.rows[1][11], 3800, 'total column');
+  assert.equal(sheet.rows[1][12], 3800, 'total column');
   assert.equal(sheet.rows[1][2], 'vegetáriánus');
 
   const edited = call('doPost', { action: 'save', person: { id: created.id, name: 'Kiss Anna', diet: 'meat', meals: { sun_lunch: true } } });
@@ -93,7 +93,7 @@ test('create, list, edit, delete', () => {
   assert.equal(edited.people[0].diet, 'meat');
   assert.equal(edited.people[0].meals.fri_dinner, false);
   assert.equal(edited.people[0].meals.sun_lunch, true);
-  assert.equal(sheet.rows[1][11], 1800);
+  assert.equal(sheet.rows[1][12], 2000);
 
   call('doPost', { action: 'save', person: { name: 'Nagy Béla', meals: {} } });
   const removed = call('doPost', { action: 'delete', id: created.id });

@@ -1,7 +1,7 @@
-import { DAYS, ITEMS, normalizePerson, summarize } from './calc.js?v=202610031011';
-import { API_URL } from './config.js?v=202610031011';
-import { createStore } from './store.js?v=202610031011';
-import { $, dayLabel, h, initShell, itemLabel, liveSync, nf, t, toast } from './ui.js?v=202610031011';
+import { DAYS, ITEMS, normalizePerson, summarize } from './calc.js?v=202610031119';
+import { API_URL } from './config.js?v=202610031119';
+import { createStore } from './store.js?v=202610031119';
+import { $, dayLabel, h, initShell, itemLabel, liveSync, nf, t, toast } from './ui.js?v=202610031119';
 
 const store = createStore(API_URL);
 const state = { people: null };
@@ -47,7 +47,7 @@ function update() {
                   stat(t('persons'), s.count, 'stat-main'),
                   stat(t('meat'), s.meat),
                   stat(t('veg'), s.veg, 'stat-veg'))
-              : h('div', { class: 'stats' }, stat(t('sleeping'), s.count, 'stat-main')));
+              : h('div', { class: 'stats' }, stat(t(it.kind === 'room' ? 'sleeping' : 'attending'), s.count, 'stat-main')));
         }))));
 }
 

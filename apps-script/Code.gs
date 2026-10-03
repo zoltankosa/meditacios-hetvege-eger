@@ -8,11 +8,12 @@ var ITEMS = [
   ['fri_dinner', 'Péntek vacsora', 1800],
   ['fri_room', 'Péntek szállás', 2000],
   ['sat_breakfast', 'Szombat reggeli', 1000],
-  ['sat_lunch', 'Szombat ebéd', 1800],
+  ['sat_lunch', 'Szombat ebéd', 2000],
   ['sat_dinner', 'Szombat vacsora', 1800],
   ['sat_room', 'Szombat szállás', 2000],
+  ['sat_teaching', 'Szombat tanítás', 2000],
   ['sun_breakfast', 'Vasárnap reggeli', 1000],
-  ['sun_lunch', 'Vasárnap ebéd', 1800]
+  ['sun_lunch', 'Vasárnap ebéd', 2000]
 ];
 var HEADERS = ['ID', 'Név', 'Étrend']
   .concat(ITEMS.map(function (it) { return it[1]; }))

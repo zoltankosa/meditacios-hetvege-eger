@@ -10,9 +10,9 @@ const people = [
 ];
 
 test('prices match the spreadsheet', () => {
-  assert.equal(personTotal(people[0]), 11200);
+  assert.equal(personTotal(people[0]), 11600);
   assert.equal(personTotal(people[1]), 4000);
-  assert.equal(personTotal(people[2]), 13200);
+  assert.equal(personTotal(people[2]), 15600);
 });
 
 test('summary totals and diet split', () => {
@@ -20,13 +20,13 @@ test('summary totals and diet split', () => {
   assert.equal(s.people, 3);
   assert.equal(s.meat, 2);
   assert.equal(s.veg, 1);
-  assert.equal(s.total, 28400);
-  assert.equal(s.room, 12000);
-  assert.equal(s.food, 16400);
+  assert.equal(s.total, 31200);
+  assert.equal(s.room, 14000);
+  assert.equal(s.food, 17200);
   assert.equal(s.food + s.room, s.total);
   assert.deepEqual(
     ITEMS.map((it) => s.items[it.id].count),
-    [2, 3, 1, 2, 2, 3, 1, 2]
+    [2, 3, 1, 2, 2, 3, 1, 1, 2]
   );
   assert.equal(s.items.fri_dinner.meat, 1);
   assert.equal(s.items.fri_dinner.veg, 1);

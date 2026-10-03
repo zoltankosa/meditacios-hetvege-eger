@@ -37,7 +37,7 @@ export const STRINGS = {
     loading: 'Betöltés',
     days: { fri: 'Péntek', sat: 'Szombat', sun: 'Vasárnap' },
     dayDates: { fri: 'okt. 9.', sat: 'okt. 10.', sun: 'okt. 11.' },
-    kinds: { dinner: 'Vacsora', breakfast: 'Reggeli', lunch: 'Ebéd', room: 'Szállás' },
+    kinds: { dinner: 'Vacsora', breakfast: 'Reggeli', lunch: 'Ebéd', room: 'Szállás', teaching: 'Tanítás' },
     doneTitle: (n) => `Köszönjük, ${n}!`,
     doneBody: 'A jelentkezésedet rögzítettük. Ha változik valami, erről a telefonról bármikor módosíthatod.',
     updatedTitle: 'Módosítás elmentve',
@@ -63,8 +63,10 @@ export const STRINGS = {
     perDay: 'Naponta',
     persons: 'fő étkezik',
     sleeping: 'fő alszik itt',
+    attending: 'fő vesz részt',
 
     programIntro: 'A hétvége napirendje.',
+    programNote: 'A helyszínen türelmeteket kérjük, mert csengetés után le kell menjünk kinyitni az ajtót ami időbe telik.',
 
     live: 'Élő',
     updatedAt: (tm) => `Frissítve ${tm}`,
@@ -112,7 +114,7 @@ export const STRINGS = {
     loading: 'Loading',
     days: { fri: 'Friday', sat: 'Saturday', sun: 'Sunday' },
     dayDates: { fri: '9 Oct', sat: '10 Oct', sun: '11 Oct' },
-    kinds: { dinner: 'Dinner', breakfast: 'Breakfast', lunch: 'Lunch', room: 'Accommodation' },
+    kinds: { dinner: 'Dinner', breakfast: 'Breakfast', lunch: 'Lunch', room: 'Accommodation', teaching: 'Teaching' },
     doneTitle: (n) => `Thank you, ${n}!`,
     doneBody: 'Your registration is saved. If anything changes, you can edit it from this phone at any time.',
     updatedTitle: 'Changes saved',
@@ -138,8 +140,10 @@ export const STRINGS = {
     perDay: 'Per day',
     persons: 'eating',
     sleeping: 'sleeping here',
+    attending: 'attending',
 
     programIntro: 'The schedule of the weekend.',
+    programNote: 'Please be patient at the venue: after the doorbell, someone has to come down to open the door, which takes a little time.',
 
     live: 'Live',
     updatedAt: (tm) => `Updated ${tm}`,
